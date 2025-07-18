@@ -3,6 +3,6 @@ export default function Die(props){
         backgroundColor: props.isHeld? "lightgreen" : "white",
     }
     return (
-        <button style={styles}>{props.value}</button>
+        <button style={styles} onClick={props.hold}>{props.value}</button>
     )
 }
